@@ -4,13 +4,13 @@
 =====================*/
 
 ::selection {
- background: #EC5598;
+ background: #507F00;
 }
 ::-moz-selection {
- background: #EC5598;
+ background: #507F00;
 }
 ::-webkit-selection {
-  background: #EC5598;
+  background: #507F00;
 }
 
 /* Premery bg Hex color*/
@@ -118,33 +118,33 @@ ol.list-num-count > li::before,
 .opening-block:before,
 .testimonial-2 .testimonial-detail, .testimonial-grid-2 .testimonial-detail,
 .searchform input[type="submit"],.wt-tabs.border-top .nav-tabs > li > a.active::after {
-	background-color:#EC5598;
+	background-color:#507F00;
 }
 
 /* Premery hex buttons bg color*/
 .site-button {
-	background-color:#EC5598;
+	background-color:#507F00;
 }
 .site-button:hover,
 .site-button:focus,
 .site-button:active {
-	background-color:#da4386;
+	background-color:#507F00;
 }
 
 /* other hex buttons bg color*/
 .searchform input[type="submit"] {
-	background-color:#EC5598;
+	background-color:#507F00;
 }
 .searchform input[type="submit"]:hover,
 .searchform input[type="submit"]:focus,
 .searchform input[type="submit"]:active {
-	background-color:#c82157;
+	background-color:#507F00;
 }
 
 
 /* Premery Rgba color*/
 .wt-info-has.site-bg-primary {
-	background-color:rgba(230, 63, 117, 0.9);
+	background-color:#507F00;
 }
 
 
@@ -239,13 +239,13 @@ ol.comment-list li.comment .reply a,
 .masonry-filter.link-style.has-bg > li:hover a,
 .masonry-filter.outline-style.has-bg > li a:hover,
 .social-icons.social-dark.has-bg li a:hover, .pro-banner-disc h3 {
-	color:#EC5598;
+	color:#507F00;
 }
 @media only screen and (max-width:991px) {
 .site-bg-primary .header-nav .nav > li:hover > a,
 .site-bg-primary .header-nav .nav > li.active > a, 
 .site-bg-primary .header-nav .nav > li.current-menu-item > a {
-	color:#EC5598;
+	color:#507F00;
 }
 }
 /*===================== 
@@ -280,12 +280,12 @@ input[type=radio] + label:hover:before,
 .masonry-filter.outline-style.has-bg > li a:hover,
 ol.list-num-count.list-outline > li::before,
 .date-style-3 .wt-post-media  {
-	border-color:#EC5598;
+	border-color:#507F00;
 }
 
 
 .our-pricing-carousel .item.active-arrow:after{
-	border-top: 18px solid #EC5598;
+	border-top: 18px solid #507F00;
 }
 /*===================== 
 	Secondery bg hex color
@@ -320,9 +320,9 @@ ol.list-num-count.list-outline > li::before,
 	Gradient
  =====================*/
 .primary-gradi{
-background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(230,63,117,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(230,63,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(230,63,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#e63f75',GradientType=0 ); /* IE6-9 */
+background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, #507F00 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,#507F00 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,#507F00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#507F00',GradientType=0 ); /* IE6-9 */
 
 }
