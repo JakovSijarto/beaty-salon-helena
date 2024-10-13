@@ -696,6 +696,9 @@ Version: 2.0
 /*======================================
 1. GENERAL 
 ======================================*/
+html {
+	scroll-behavior: smooth;
+  }
 
 body {
 	background-color:#FFF;
@@ -12973,8 +12976,9 @@ a.book-now-btn:active{
 .header-style-1 .wt-topbar-right {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:310px){
 	.header-style-1 .wt-topbar-right {
 		display: block;
 	}

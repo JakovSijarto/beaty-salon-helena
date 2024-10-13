@@ -1,0 +1,88 @@
+
+
+
+h1 {
+    text-align: center;
+    color: #507F00;
+    margin-bottom: 20px;
+}
+
+.waxing-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.waxing-table th, 
+.waxing-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.waxing-table th {
+    background-color: #507F00;
+    color: #fff;
+}
+
+.waxing-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.waxing-table td {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .waxing-table th, .waxing-table td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .waxing-table, .waxing-table thead, .waxing-table tbody, .waxing-table th, .waxing-table td, .waxing-table tr {
+        display: block;
+    }
+
+    .waxing-table tr {
+        margin-bottom: 15px;
+    }
+
+    .waxing-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .waxing-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #507F00;
+    }
+
+    .waxing-table td:nth-of-type(1)::before { content: "Service"; }
+    .waxing-table td:nth-of-type(2)::before { content: "Price (Sugar Paste)"; }
+    .waxing-table td:nth-of-type(3)::before { content: "Price (Wax)"; }
+}
+
+
+.masonry-item {
+    padding: 10px;
+}
+
+.wt-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wt-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
