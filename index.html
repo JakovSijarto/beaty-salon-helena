@@ -18,69 +18,179 @@
     
     <!-- PAGE TITLE HERE -->
     <title>Neroli</title>
-<style>        .spm-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
+    <style>
+         .footer-top {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+        }
 
-.spm-section img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    object-fit: cover; /* Ensures the image scales well */
-    border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    flex-basis: 40%;
-}
+        /* Flexbox layout for even 3-column structure */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
 
-.spm-content {
-    flex-basis: 55%;
-    padding: 20px;
-}
+        /* Column styling */
+        .footer-column {
+            flex-basis: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.spm-content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+        /* Title Styling */
+        .footer-column h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #28a745; /* Greenish color */
+        }
 
-.spm-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+        /* Paragraph text styling */
+        .footer-column p {
+            font-size: 16px;
+            color: #b3b3b3; /* Greyish color */
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
 
-.spm-content button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
+        /* Logo Row Styling */
+        .footer-logo img {
+            width: 200px; /* Control the width of the logo */
+            max-width: 100%;
+            height: auto;
+        }
 
-.spm-content button:hover {
-    background-color: #0056b3;
-}
+        /* Navigation Styling */
+        .footer-nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .spm-section {
-        flex-direction: column;
-        text-align: center;
-    }
+        .footer-nav li {
+            display: inline-block;
+        }
 
-    .spm-content {
-        padding: 10px;
-    }
+        .footer-nav a {
+            color: #b3b3b3; /* Greyish color */
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-    .spm-section img {
-        margin-bottom: 20px;
-    }
-}</style>
+        .footer-nav a:hover {
+            color: #28a745; /* Hover greenish */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-column {
+                flex-basis: 100%;
+            }
+
+            .footer-nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .section-head {
+            padding-top: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding-bottom: 40px;
+        }
+
+        .section-head h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .site-text-primary {
+            color: #007bff;
+        }
+
+        /* SPM Section styling */
+        .spm-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .spm-section img {
+            width: 40%;
+            max-width: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 30px;
+        }
+
+        .spm-content {
+            max-width: 50%;
+        }
+
+        .spm-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Button styling */
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .spm-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .spm-section img {
+                width: 80%;
+                margin: 0 auto 20px;
+            }
+
+            .spm-content {
+                max-width: 100%;
+            }
+        }
+    </style>
     
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -120,11 +230,11 @@
                 <div class="container">
                     <div class="wt-topbar-right">
                         <ul class="list-unstyled e-p-bx">
-                            <li><i class="fa fa-phone"></i><a style="cursor: pointer;" href="">01-4814-786</a> / <a style="cursor: pointer;" href="">098-976-3008</a></li>
+                            <li><i class="fa fa-phone"></i><a style="cursor: pointer;" href="tel:+014814786">01-4814-786</a></li>
                         </ul>
                         <ul class="social-bx list-inline">
-                            <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/Neroli.Centar/" class="fa fa-facebook"></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/neroli_centar/" class="fa fa-instagram"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -1250,6 +1360,14 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="masonry-item cat-filter-2 col-xl-3 col-lg-6 col-md-6">
+                                <div class="flip-container">
+                                    <div class="wt-box">
+                                        <img src="images/gallery/pic8.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         
             			</div>
@@ -1259,16 +1377,15 @@
             </div>
             <!-- OUR GALLERY CONTENT END  -->
 
-            <div class="section-head text-center" style="padding-top: 20px;">
-                <h1 ><span class="site-text-primary " >SPM</span> Tretman</h1>
+            <div class="section-head">
+                <h1><span class="site-text-primary">SPM</span> Tretman</h1>
                 <section class="spm-section">
-                    <img src="images/spm.jpeg" alt="SPM Treatment Image" style="width: 20%;">
+                    <img src="images/spm.jpeg" alt="SPM Treatment Image">
                     <div class="spm-content">
                         <p>
-                            SPM (Suction Pump Massage) tretman je neinvazivna terapija oblikovanja tijela namijenjena smanjenju celulita
- i poboljšati čvrstoću kože. Uz pomoć napredne vakuumske tehnologije potiče limfnu drenažu, pospješuje cirkulaciju,
- i potiče glatku teksturu kože. Siguran, učinkovit i bez zastoja, idealan je za oblikovanje tijela.
+                            SPM (Suction Pump Massage) treatment is a non-invasive body contouring therapy designed to reduce cellulite and improve skin firmness. Using advanced vacuum technology, it stimulates lymphatic drainage, enhances circulation, and promotes smoother skin texture. Safe, effective, and with no downtime, it's ideal for body shaping.
                         </p>
+                        <a href="#kontakt" class="btn">Nazovite nas!</a>
                     </div>
                 </section>
             </div>
@@ -1409,17 +1526,7 @@
                                             </span>
                                             <div class="icon-content">
                                                 <h4 class="m-b5">Adresa</h4>
-                                                <span class="font-12">Iblerov trg 4</span>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="wt-icon-box-wraper left p-b20 text-white">
-                                            <span class="icon-lg">
-                                                <span class="flaticon-envelope"></span>
-                                            </span>
-                                            <div class="icon-content">
-                                                <h4 class="m-b5">Email</h4>
-                                                <span class="font-12">bajanhelena@gmail.com </span>
+                                                <span class="font-20">Iblerov trg 4</span>
                                             </div>
                                         </div>
                                         
@@ -1428,8 +1535,8 @@
                                                 <span class="flaticon-smartphone"></span>
                                             </span>
                                             <div class="icon-content">
-                                                <h4 class="m-b5">Phone</h4>
-                                                <span class="font-12">01 / 4814-786 </span>
+                                                <h4 class="m-b5">Mobitel</h4>
+                                                <span class="font-20 font-bold">01 / 4814-786 </span>
                                             </div>
                                         </div>
 
@@ -1445,40 +1552,7 @@
                                 </div>                               
                             </div>
                             <div class="col-lg-8 col-md-6">
-                            	<div class="section-content bg-gray">
-                                      <div class="contact-home-right p-a30">
-                                      	<h5 class="text-uppercase font-26 p-b20 font-weight-400">JAVITE NAM SE</h5>
-                                      	<form  class="cons-contact-form2" method="post" action="form-handler2.php">
-                                        	<div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                    <input name="username" type="text" required class="form-control" placeholder="Ime">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                    <input name="email" type="text" class="form-control" required placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-book"></i></span>
-                                                    <input name="phone" type="text" class="form-control" required placeholder="Mobitel">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
-                                                    <textarea name="message" class="form-control" rows="4" placeholder="Poruka"></textarea>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="site-button skew-icon-btn radius-sm">
-                                              <span class="font-weight-700 inline-block text-uppercase p-lr15">Pošalji</span> 
-                                            </button>
-                                        </form>
-                                      </div>                             
-                                </div>
+
                             </div>
                         </div>
                     
@@ -1494,31 +1568,52 @@
         <!-- FOOTER START -->
         <footer class="site-footer footer-light">      
             <!-- FOOTER BLOCKES START -->  
-            <div class="footer-top overlay-wraper">
-                <div class="overlay-main"></div>
-                <div class="container">
-                    <div class="row">
-                        <!-- ABOUT COMPANY -->
-                        <div class="col-lg-3 col-md-6">  
-                            <div class="widget widget_about">
-                                <h4 class="widget-title">About Company</h4>
-                                <p>Thewebmax ipsum dolor sit amet, interior adipiscing elit, sed diam nonummy nibh is euismod tincidunt ut laoreet dolore are agna aliquam erat. wisi enim ad minim veniam, quis tation. sit amet, consectet. ipsum dolor sit amet, consectetuer and item adipiscing. ipsum dolor sit.
-                                </p>  
-                            </div>
-                        </div>     
-                        <!-- NEWSLETTER -->
-                        <div class="col-lg-3 col-md-6">
-                            <!-- SOCIAL LINKS -->
-                            <div class="widget widget_social_inks">
-                                <h4 class="widget-title">Links</h4>
-                                <ul class="">
-                                    <li><a href="">O nama</a></li>
-                                    <li><a href="">Cijenik</a></li>
-                                    <li><a href="">Galerija</a></li>
-                                    <li><a href="">Kontakt</a></li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="footer-top">
+                <div class="footer-content">
+                    <!-- About Us Column -->
+                    <div class="footer-column">
+                        <h4 class="site-text-primary">O nama</h4>
+                        <div class="wt-separator style-icon">
+                            <i class="fa fa-leaf text-black"></i>
+                            <span class="separator-left site-bg-primary"></span>
+                            <span class="separator-right site-bg-primary"></span>
+                        </div>  
+                        <p>
+                            Thewebmax ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+                            dolore magna aliquam erat volutpat. Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+                            lobortis nisl ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+            
+                    <!-- Logo Column -->
+                    <div class="footer-column footer-logo">
+                        <img src="images/logo.png" alt="Company Logo">
+                    </div>
+            
+                    <!-- Navigation Column -->
+                    <div class="footer-column">
+                        <h4  style="padding-top: 2em;">Brzi linkovi</h4>
+                        <div class="wt-separator style-icon">
+                            <i class="fa fa-leaf text-black"></i>
+                            <span class="separator-left site-bg-primary"></span>
+                            <span class="separator-right site-bg-primary"></span>
+                        </div>  
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#aboutus">O nama</a>
+                            </li>
+                            <li>
+                                <a href="#pricing">Cijenik</a>
+                            </li>
+                            
+                            <li class="submenu-direction">
+                                <a href="#gallery">Galerija</a>
+                            </li>
+                            
+                            <li class="has-mega-menu ">
+                                <a href="#kontakt">Kontakt</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -1526,7 +1621,7 @@
             <div class="footer-bottom overlay-wraper">
                 <div class="container">
                     <div class="row ftr-btm">
-                        <div class="wt-footer-bot-left">
+                        <div>
                             <span class="copyrights-text">© 2024 NewAge. All Rights Reserved.</span>
                         </div>
                     </div>
