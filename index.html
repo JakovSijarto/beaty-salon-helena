@@ -190,6 +190,104 @@
                 max-width: 100%;
             }
         }
+/* Main Contact Section */
+.contact-section {
+    background-color: #f0f4f8;
+    padding: 80px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Header Styling */
+.contact-header {
+    margin-bottom: 50px;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-description {
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Content Section */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Contact Information Box */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+}
+
+.contact-info-item {
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.contact-info h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Google Map */
+.contact-map {
+    flex: 1 1 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+}
+
     </style>
     
     <!-- MOBILE SPECIFIC -->
@@ -1284,20 +1382,7 @@
                         </div>
                         <p>Zavirite u našu galeriju i uvjerite se u vedru atmosferu našeg salona i vrhunske rezultate naših tretmana. Pregledajte fotografije našeg prostora</p>
                     </div>
-                     <!-- TITLE END-->
-                                              
-                     <!-- PAGINATION START 
-                    <div class="filter-wrap p-a15 our-gallery  m-tb30">
-                        <ul class="masonry-filter link-style  text-uppercase center-block m-t0">
-                            <li class="active"><a data-filter="*" href="#">All</a></li>
-                            <li><a data-filter=".cat-filter-1" href="#">Hair cut</a></li>
-                            <li><a data-filter=".cat-filter-2" href="#">Foot</a></li>
-                            <li><a data-filter=".cat-filter-3" href="#">Body</a></li>
-                            <li><a data-filter=".cat-filter-4" href="#">Massage</a></li>
-                            <li><a data-filter=".cat-filter-5" href="#">Face massage</a></li>
-                        </ul>
-                    </div>-->
-                    <!-- PAGINATION END -->
+
                     
                  </div>
                 <!-- GALLERY CONTENT START -->
@@ -1498,67 +1583,46 @@
             <!-- OUR TESTIMONIAL SECTION END  --> 
             
             <!-- CONTACT US SECTION END  -->         
-			<div class="section-full p-t100 p-b70" id="kontakt">
-                <div class="container equal-wraper no-col-gap m-b30">
-                  	
-                        <!-- TITLE START -->
-                        <div class="section-head text-center">
-                            <h1><span class="site-text-primary"> Kontaktirajte</span> Nas</h1>
-                            <div class="wt-separator-outer ">
-                            <div class="wt-separator style-icon">
-                                <i class="fa fa-leaf text-black"></i>
-                                <span class="separator-left site-bg-primary"></span>
-                                <span class="separator-right site-bg-primary"></span>
-                            </div>                            
-                        </div>
-                            <p>Imate pitanja ili želite rezervirati termin? Kontaktirajte nas! Posjetite našu kontakt stranicu za sve pojedinosti o tome kako doći do nas, uključujući telefon, e-poštu i informacije o lokaciji.</p>
-                        </div>
-                        <!-- TITLE END -->   
-                                     	      
-                        <div class="row conntact-home bg-gray m-b30">
-                        	<div class="col-lg-4 col-md-6 contact-home-left bg-no-repeat site-bg-primary bg-left-center"  style="background-image:url(images/background/contact-map.png);">
-                            	<div class="section-content">
-                                	<div class="p-a50">
-                                    	
-                                        <div class="wt-icon-box-wraper left p-b20 text-white">
-                                            <span class="icon-lg">
-                                                <span class="flaticon-placeholder"></span>
-                                            </span>
-                                            <div class="icon-content">
-                                                <h4 class="m-b5">Adresa</h4>
-                                                <span class="font-20">Iblerov trg 4</span>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="wt-icon-box-wraper left p-b10 text-white">
-                                            <span class="icon-lg">
-                                                <span class="flaticon-smartphone"></span>
-                                            </span>
-                                            <div class="icon-content">
-                                                <h4 class="m-b5">Mobitel</h4>
-                                                <span class="font-20 font-bold">01 / 4814-786 </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="Opening-hours text-white">
-                                            <h3 class="wt-title text-uppercase m-t0">Otvoreni smo</h3>
-                                            <ul class="list-unstyled">
-                                                <li>Pon - Pet <span class="pull-right">9.00 - 20.00 Pm</span></li>
-                                                <li>Subotom <span class="pull-right">8.00 - 14.00 Pm</span></li>
-                                            </ul>
-                                        </div>
-                                            
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="col-lg-8 col-md-6">
-
-                            </div>
-                        </div>
+			<div class="contact-section" id="kontakt">
+                <div class="contact-container">
                     
+                    <!-- Header Section -->
+                    <div class="contact-header">
+                        <h2 class="contact-title">Javite nam se</h2>
+                        <p class="contact-description">Imate pitanja ili želite rezervirati termin? Posjetite našu kontakt stranicu za pojedinosti o tome kako nas kontaktirati, uključujući podatke o telefonu, e-pošti i lokaciji.</p>
+                    </div>
+            
+                    <!-- Contact Details & Map Section -->
+                    <div class="contact-content">
+                        
+                        <!-- Contact Information -->
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <h3>Naša lokacija</h3>
+                                <p>Trg Drage Iblera 4, Zagreb</p>
+                            </div>
+                            <div class="contact-info-item">
+                                <h3>Mobitel</h3>
+                                <p>01 / 4814-786</p>
+                            </div>
+                            <div class="contact-info-item">
+                                <span class="contact-icon"><i class="fas fa-clock"></i></span>
+                                <h3>Otvoreni smo</h3>
+                                <p>Pon - Pet: 9:00h - 8:00h<br>Sat: 8:00h - 2:00h</p>
+                            </div>
+                        </div>
+            
+                        <!-- Google Map Embed -->
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173.80763690930033!2d15.985368774032317!3d45.81281668109053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d65551245097%3A0xc3372f3b57b80a45!2sTrg%20Drage%20Iblera%204%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1731572988040!5m2!1shr!2shr" 
+                                allowfullscreen="true" loading="lazy"></iframe>
+                        </div>
+            
+                    </div>
                 </div>
-                
-            </div> 
+            </div>
+            
             <!-- CONTACT US OFFER SECTION END  --> 
                                         
              
@@ -1579,15 +1643,13 @@
                             <span class="separator-right site-bg-primary"></span>
                         </div>  
                         <p>
-                            Thewebmax ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
-                            dolore magna aliquam erat volutpat. Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-                            lobortis nisl ut aliquip ex ea commodo consequat.
+                            Beauty centar Helena nudi niz personaliziranih tretmana ljepote za poboljšanje vašeg prirodnog sjaja. S timom stručnih stručnjaka osiguravamo visokokvalitetnu uslugu i opuštajuće okruženje. Posjetite nas za rješenja za pomlađivanje kože, kose i wellnessa prilagođena vašim potrebama.
                         </p>
                     </div>
             
                     <!-- Logo Column -->
                     <div class="footer-column footer-logo">
-                        <img src="images/logo.png" alt="Company Logo">
+                        <img src="images/logo-1.png" alt="Company Logo">
                     </div>
             
                     <!-- Navigation Column -->
